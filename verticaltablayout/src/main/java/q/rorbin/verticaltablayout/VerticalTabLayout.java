@@ -523,7 +523,7 @@ public class VerticalTabLayout extends ScrollView {
                         mIndicatorX = getWidth() - mIndicatorWidth;
                     } else if (mIndicatorGravity == Gravity.FILL) {
                         mLastWidth = mIndicatorWidth;
-                        mIndicatorWidth = getWidth();
+//                        mIndicatorWidth = getWidth();
                     }
                     invalidate();
                 }
