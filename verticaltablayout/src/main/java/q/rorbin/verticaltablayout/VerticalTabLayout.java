@@ -33,7 +33,7 @@ import static android.support.v4.view.ViewPager.SCROLL_STATE_SETTLING;
 
 /**
  * @author chqiu
- *         Email:qstumn@163.com
+ * Email:qstumn@163.com
  */
 public class VerticalTabLayout extends ScrollView {
     private Context mContext;
@@ -624,7 +624,8 @@ public class VerticalTabLayout extends ScrollView {
             mIndicatorRect.left = mIndicatorX;
             mIndicatorRect.top = mIndicatorTopY;
             mIndicatorRect.right = mIndicatorX + mIndicatorWidth;
-            mIndicatorRect.bottom = mIndicatorBottomY;
+//            mIndicatorRect.bottom = mIndicatorBottomY;
+            mIndicatorRect.bottom = mTabHeight;
             if (mIndicatorCorners != 0) {
                 canvas.drawRoundRect(mIndicatorRect, mIndicatorCorners, mIndicatorCorners, mIndicatorPaint);
             } else {
