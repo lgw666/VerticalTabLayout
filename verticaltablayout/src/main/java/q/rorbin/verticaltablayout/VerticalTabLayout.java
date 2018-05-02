@@ -540,7 +540,7 @@ public class VerticalTabLayout extends ScrollView {
                         childView.getBottom()) * (offset - index);
             } else {
                 mIndicatorTopY = childView.getTop();
-                mIndicatorBottomY = childView.getBottom();
+                mIndicatorBottomY = mTabHeight;
             }
         }
 
@@ -624,8 +624,8 @@ public class VerticalTabLayout extends ScrollView {
             mIndicatorRect.left = mIndicatorX;
             mIndicatorRect.top = mIndicatorTopY;
             mIndicatorRect.right = mIndicatorX + mIndicatorWidth;
-//            mIndicatorRect.bottom = mIndicatorBottomY;
-            mIndicatorRect.bottom = mTabHeight;
+            mIndicatorRect.bottom = mIndicatorBottomY;
+//            mIndicatorRect.bottom = mTabHeight;
             if (mIndicatorCorners != 0) {
                 canvas.drawRoundRect(mIndicatorRect, mIndicatorCorners, mIndicatorCorners, mIndicatorPaint);
             } else {
